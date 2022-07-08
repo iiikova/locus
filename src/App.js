@@ -1,23 +1,215 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div className="logo-header">
+          <img src={require("./assets/images/logo/Group 1.png")} alt="logo" />
+          <img src={require("./assets/images/logo/Locus.png")} alt="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Location</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <button>Sign Up</button>
       </header>
+
+      <main>
+        <section>
+          <div className="container">
+            <div className="even-columns">
+              <div>
+                <h1>Get the inspiration of interior design here</h1>
+                <p>
+                  architecture not only about engineering, it even lands to art
+                  and aesthetics. With us, you will get a residentical design
+                  with an extraordinary touch of art.
+                </p>
+                <button>Let’s go</button>
+              </div>
+              <div>
+                <img src={require("./assets/images/main.png")} alt="flowers" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container">
+            <h1>How it works</h1>
+            <p>Spice up your space even simpler than you think</p>
+
+            <div className="even-columns">
+              <div>
+                <img src={require("./assets/images/video.png")} alt="video" />
+              </div>
+              <div>
+                <p>
+                  We provide design and build for commercial building, interior
+                  and furniture to improve the better life.{" "}
+                </p>
+                <p>see video</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container">
+            <div className="even-columns">
+              <div>
+                <img src={require("./assets/images/sofa.png")} alt="sofa" />
+              </div>
+              <div>
+                <h1>
+                  Our mission is to deliver aesthetic visual for your home
+                </h1>
+                <p>
+                  By applying bacis psychology principles, we are going to
+                  explain how perception works and how we can use this
+                  understanding to maximise the space that we occupy in our
+                  homes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container">
+            <h1>Our project </h1>
+            <p>Introducing our first official project</p>
+            <div className="even-columns">
+              <div>
+                <h1>Project Livingroom</h1>
+                <p>
+                  A simple guide to create the perfect livingro- om for . Night
+                  Watc works beautifully in a wi- de gamut of arrangements.
+                </p>
+                <img
+                  src={require("./assets/images/prog_1.png")}
+                  alt="project"
+                />
+              </div>
+              <div>
+                <img
+                  src={require("./assets/images/proj_2.png")}
+                  alt="project"
+                />
+                <h1>Project workspace</h1>
+                <p>
+                  A simple guide to create the perfect livingro- om for . Night
+                  Watc works beautifully in a wi- de gamut of arrangements.
+                </p>
+              </div>
+              <div>
+                <h1>Library</h1>
+                <p>
+                  A simple guide to create the perfect livingro- om for . Night
+                  Watc works beautifully in a wi- de gamut of arrangements.
+                </p>
+                <img
+                  src={require("./assets/images/proj_3.png")}
+                  alt="project"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container">
+            <h1>Testimonial</h1>
+            <div>
+              <img
+                src={require("./assets/images/brands/image 2.png")}
+                alt="brands"
+              />
+              <img
+                src={require("./assets/images/brands/image 3.png")}
+                alt="brands"
+              />
+              <img
+                src={require("./assets/images/brands/image 4.png")}
+                alt="brands"
+              />
+              <img
+                src={require("./assets/images/brands/image 5.png")}
+                alt="brands"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container">
+            <div className="even-columns">
+              <div>
+                <img src={require("./assets/images/worker.png")} alt="worker" />
+              </div>
+              <div>
+                <div>
+                  <img
+                    src={require("./assets/images/105 project done.png")}
+                    alt="static"
+                  />
+                  <img
+                    src={require("./assets/images/12 years of experience.png")}
+                    alt="static"
+                  />
+                  <img
+                    src={require("./assets/images/10+ big company partnership.png")}
+                    alt="static"
+                  />
+                </div>
+                <p>
+                  "Not able to tell you how happy I am with interior design.
+                  Interior design has completely surpassed our expectations.
+                  Interior design saved my business. Interior design is worth
+                  much more than I paid."
+                </p>
+                <p>- Roscoe</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container">
+            <div className="even-columns">
+              <div>
+                <h1>Contact Us</h1>
+                <p>Have any questions? Want help before getting started?</p>
+              </div>
+              <div>
+                <form>
+                  <input type="text" placeholder="Full name" />
+                  <input type="email" placeholder="Email address" />
+                  <input type="text" placeholder="Description" />
+                  <button>Send now</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>ikova dev</p>
+      </footer>
     </div>
   );
 }
