@@ -1,17 +1,20 @@
-import "./App.css";
+import "./App.scss";
+import { GoTriangleRight } from "react-icons/go";
 
 function App() {
   return (
     <div className="App">
-      <header>
+      <header className="container">
         <div className="logo-header">
           <img src={require("./assets/images/logo/Group 1.png")} alt="logo" />
           <img src={require("./assets/images/logo/Locus.png")} alt="logo" />
         </div>
-        <nav>
-          <ul>
+        <nav aria-label="Primary">
+          <ul role="navigation">
             <li>
-              <a href="#">Home</a>
+              <a href="#" className="active">
+                Home
+              </a>
             </li>
             <li>
               <a href="#">Contact</a>
@@ -28,10 +31,10 @@ function App() {
       </header>
 
       <main>
-        <section>
+        <section className="main">
           <div className="container">
             <div className="even-columns">
-              <div>
+              <div className="main__title">
                 <h1>Get the inspiration of interior design here</h1>
                 <p>
                   architecture not only about engineering, it even lands to art
@@ -47,7 +50,7 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section className="section__2">
           <div className="container">
             <h1>How it works</h1>
             <p>Spice up your space even simpler than you think</p>
@@ -57,7 +60,18 @@ function App() {
                 <img src={require("./assets/images/video.png")} alt="video" />
               </div>
               <div>
+                <div className="big-btn">
+                  <div className="small-btn">
+                    <div>
+                      <img
+                        src={require("./assets/images/play.png")}
+                        alt="video"
+                      />
+                    </div>
+                  </div>
+                </div>
                 <p>
+                  <GoTriangleRight />
                   We provide design and build for commercial building, interior
                   and furniture to improve the better life.{" "}
                 </p>
@@ -67,7 +81,7 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section className="section__3">
           <div className="container">
             <div className="even-columns">
               <div>
@@ -75,7 +89,11 @@ function App() {
               </div>
               <div>
                 <h1>
-                  Our mission is to deliver aesthetic visual for your home
+                  Our mission is to
+                  <br />
+                  deliver aesthetic visual
+                  <br />
+                  for your home
                 </h1>
                 <p>
                   By applying bacis psychology principles, we are going to
@@ -88,10 +106,12 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section className="section__4">
           <div className="container">
             <h1>Our project </h1>
             <p>Introducing our first official project</p>
+            <div className="line"></div>
+            <div className="line"></div>
             <div className="even-columns">
               <div>
                 <h1>Project Livingroom</h1>
@@ -130,20 +150,21 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section className="section__5">
           <div className="container">
             <h1>Testimonial</h1>
-            <div>
+            <div className="brands">
               <img
-                src={require("./assets/images/brands/image 2.png")}
+                src={require("./assets/images/brands/image 4.png")}
                 alt="brands"
               />
+
               <img
                 src={require("./assets/images/brands/image 3.png")}
                 alt="brands"
               />
               <img
-                src={require("./assets/images/brands/image 4.png")}
+                src={require("./assets/images/brands/image 2.png")}
                 alt="brands"
               />
               <img
@@ -154,16 +175,31 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section className="section__6">
           <div className="container">
             <div className="even-columns">
               <div>
                 <img src={require("./assets/images/worker.png")} alt="worker" />
               </div>
               <div>
-                <div>
-                  <img
-                    src={require("./assets/images/105 project done.png")}
+                <div className="numbers">
+                  <div>
+                    <span>105</span>
+                    <span>project</span>
+                    <span>done</span>
+                  </div>
+                  <div>
+                    <span>12</span>
+                    <span>years of</span>
+                    <span>experience</span>
+                  </div>
+                  <div>
+                    <span>10+</span>
+                    <span>big company</span>
+                    <span>partnership</span>
+                  </div>
+                  {/* <img
+                    src={require("./assets/images/105 project done (1).png")}
                     alt="static"
                   />
                   <img
@@ -173,7 +209,7 @@ function App() {
                   <img
                     src={require("./assets/images/10+ big company partnership.png")}
                     alt="static"
-                  />
+                  /> */}
                 </div>
                 <p>
                   "Not able to tell you how happy I am with interior design.
@@ -187,12 +223,14 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section className="section__7">
           <div className="container">
             <div className="even-columns">
               <div>
                 <h1>Contact Us</h1>
                 <p>Have any questions? Want help before getting started?</p>
+                <div className="line"></div>
+                <div className="line"></div>
               </div>
               <div>
                 <form>
@@ -205,11 +243,13 @@ function App() {
             </div>
           </div>
         </section>
-      </main>
 
-      <footer>
-        <p>ikova dev</p>
-      </footer>
+        <div className="container">
+          <footer>
+            <p>ikova.ua@gmail.com</p>
+          </footer>
+        </div>
+      </main>
     </div>
   );
 }

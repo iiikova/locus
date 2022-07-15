@@ -1,0 +1,33 @@
+$clr-primary: #58a9a5;
+$clr-black: #1c2323;
+$clr-white: #ffffff;
+$clr-grey: #404242;
+$clr-yellow: #fec62d;
+$clr-dark-green: #486958;
+$clr-light-green: #ccf0e6;
+
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;
+$fw-800: 800;
+$fw-900: 900;
+
+$ff-primary: "Poppins", sans-serif;
+
+@mixin h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 80px;
+  color: #1c2323;
+}
+
+@mixin p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px;
+  color: #404242;
+}
